@@ -89,7 +89,7 @@ def load_3dcars():
     return train_data
 
 def load_dsprite():
-    root = 'E:/python3.8.10/disentanglement_lib-master/bin/dsprites/dsprites_ndarray_co1sh3sc6or40x32y32_64x64.npz'
+    root = '/disentanglement_lib-master/bin/dsprites/dsprites_ndarray_co1sh3sc6or40x32y32_64x64.npz'
     if not os.path.exists(root):
         import subprocess
         print('Now download dsprites-dataset')
@@ -701,8 +701,8 @@ class MIGTest(absltest.TestCase):
 
   def test_metric_contrl(self):
     net_type = 'contrl'#"contrl" #"guide"
-    #baseRoot = "E:/python3.8.10/factor_Guided/unGuidedVAE_"
-    baseRoot = "E:/python3.8.10/ContrlVAE/contrlVAE_"
+    
+    baseRoot = "/contrlVAE_"
     total_scores_3dcars = []
     total_scores_3dshapes = []
     total_scores_dsprites = []
@@ -773,8 +773,8 @@ class MIGTest(absltest.TestCase):
     
   """def test_metric_guide(self):
     net_type = 'guide'#"contrl" #"guide"
-    baseRoot = "E:/python3.8.10/factor_Guided/unGuidedVAE_"
-    #baseRoot = "E:/python3.8.10/ContrlVAE/contrlVAE_"
+    baseRoot = "/factor_Guided/unGuidedVAE_"
+    #baseRoot = "/ContrlVAE/contrlVAE_"
     total_scores_3dcars = []
     total_scores_3dshapes = []
     for i in range(100):

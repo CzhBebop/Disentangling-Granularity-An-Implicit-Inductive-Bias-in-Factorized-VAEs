@@ -33,8 +33,8 @@ class SapScoreTest(absltest.TestCase):
     total_scores_3dcars = []
     total_scores_dsprites = []
 
-    #baseRoot = "E:/python3.8.10/factor_Guided/unGuidedVAE_"
-    baseRoot = "E:/python3.8.10/ContrlVAE/contrlVAE_"
+    
+    baseRoot = "/ContrlVAE/contrlVAE_"
     netType = "contrl" #"guide" "contrl"
 
 
@@ -107,8 +107,8 @@ class SapScoreTest(absltest.TestCase):
     total_scores_3dcars = []
     total_scores_dsprites = []
 
-    baseRoot = "E:/python3.8.10/factor_Guided/unGuidedVAE_"
-    #baseRoot = "E:/python3.8.10/ContrlVAE/contrlVAE_"
+    baseRoot = "/factor_Guided/unGuidedVAE_"
+   
     netType = "guide" #"guide" "contrl"
 
 
